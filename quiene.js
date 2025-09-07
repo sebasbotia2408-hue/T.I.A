@@ -29,7 +29,7 @@ function establecerIdioma(idioma) {
     const videos = document.getElementById('Videos');
     const denuncia = document.getElementById('Denuncia');
     switch (idioma) {
-        case 'español':
+        case 'latino':
             objetivoGeneral.textContent = 'OBJETIVO GENERAL';
             objetivosEspecificos.textContent = 'OBJETIVOS ESPECIFICOS';
             Mision.textContent = 'MISION';
@@ -43,7 +43,7 @@ function establecerIdioma(idioma) {
 
             break;
 
-        case 'inglés':
+        case 'usa':
             objetivoGeneral.textContent = 'GENERAL OBJECTIVE';
             objetivosEspecificos.textContent = 'SPECIFIC OBJECTIVES';
             Mision.textContent = 'MISSION';
@@ -73,13 +73,14 @@ function establecerIdioma(idioma) {
 document.addEventListener('DOMContentLoaded', () => {
     switch (navigator.language) {
         case 'es-ES':
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
         case 'en-US':
-            establecerIdioma('inglés');
+            establecerIdioma('usa');
             break;
         default:
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
     }
+
 });
