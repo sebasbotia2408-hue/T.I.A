@@ -28,7 +28,7 @@ function establecerIdioma(idioma) {
     const videos = document.getElementById('Videos');
     const denuncia = document.getElementById('Denuncia');
     switch (idioma) {
-        case 'español':
+        case 'latino':
             titulo.textContent = 'TRAFICO ILEGAL DE FAUNA SILVESTRE';
             parrafo.innerHTML = `
                 <p> El tráfico ilegal de animales silvestres es una actividad criminal y una de las más lucrativas del mundo. Esta representa una amenaza grave para la biodiversidad, y consiste en la captura, transporte y comercialización no autorizada de animales silvestres, ya sean vivos o muertos, como sus pieles, colmillos, etc.
@@ -49,7 +49,7 @@ function establecerIdioma(idioma) {
             titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
             break;
 
-        case 'inglés':
+        case 'usa':
             titulo.textContent = 'ILLEGAL TRAFFICKING OF WILDLIFE';
             parrafo.innerHTML = `
                 <p>Illegal wildlife trafficking is a criminal activity and one of the most lucrative in the world.
@@ -89,13 +89,13 @@ function establecerIdioma(idioma) {
 document.addEventListener('DOMContentLoaded', () => {
     switch (navigator.language) {
         case 'es-ES':
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
         case 'en-US':
-            establecerIdioma('inglés');
+            establecerIdioma('usa');
             break;
         default:
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
     }
 });
