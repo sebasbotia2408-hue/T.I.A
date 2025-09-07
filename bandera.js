@@ -1,12 +1,9 @@
-<script>
-  const banderaActual = document.getElementById("bandera-actual");
-  const opciones = document.querySelectorAll("#idiomas a");
-
-  opciones.forEach(opcion => {
-    opcion.addEventListener("click", (e) => {
-      e.preventDefault();
-      const nuevaBandera = opcion.getAttribute("data-bandera");
-      banderaActual.src = nuevaBandera;
-    });
+document.querySelectorAll('#idiomas .opcion a').forEach(opcion => {
+  opcion.addEventListener('click', function(e) {
+    e.preventDefault();
+    const bandera = this.getAttribute('data-bandera');
+    document.getElementById('bandera-actual').src = bandera;
   });
-</script>
+});
+
+
