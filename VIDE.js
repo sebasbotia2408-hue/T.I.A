@@ -25,7 +25,7 @@ function establecerIdioma(idioma) {
     const imagenes = document.getElementById('Imagenes');
     const denuncia = document.getElementById('Denuncia');
     switch (idioma) {
-        case 'español':
+        case 'latino':
             inicio.textContent = 'Inicio';
             quienes.textContent = 'Quienes somos';
             contenido.textContent = 'Contenido';
@@ -34,7 +34,7 @@ function establecerIdioma(idioma) {
 
             break;
 
-        case 'inglés':
+        case 'usa':
             inicio.textContent = 'Home';
             quienes.textContent = 'About Us';
             contenido.textContent = 'Content';
@@ -59,13 +59,14 @@ function establecerIdioma(idioma) {
 document.addEventListener('DOMContentLoaded', () => {
     switch (navigator.language) {
         case 'es-ES':
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
         case 'en-US':
-            establecerIdioma('inglés');
+            establecerIdioma('latino');
             break;
         default:
-            establecerIdioma('español');
+            establecerIdioma('latino');
             break;
     }
+
 });
