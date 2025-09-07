@@ -28,6 +28,10 @@ function establecerIdioma(idioma) {
     const contenido = document.getElementById('Contenido');
     const imagenes = document.getElementById('Imagenes');
     const videos = document.getElementById('Videos');
+    const LineaFisca = document.getElementById('LineaFisca');
+    const LineaPoliciaNacional = document.getElementById('LineaPoliciaNacional');
+    const LineadeRes = document.getElementById('LineadeRes');
+    const Telefono = document.getElementById('Telefono');
 
     switch (idioma) {
         case 'latino':
@@ -41,6 +45,12 @@ function establecerIdioma(idioma) {
             contenido.textContent = 'Contenido';
             imagenes.textContent = 'Imagenes';
             videos.textContent = 'Videos';
+            Contacto.textContent = 'Contacto';
+            LineaFisca.innerHTML = "Línea gratuita de la Fiscalía: 122";
+            LineaPoliciaNacional.innerHTML = "Línea de la Policía Nacional: 123";
+            LineadeRes.innerHTML = "Unidad Movil de Rescate de Fauna Silvestre: (+57) 317 4276828 o a la linea 195 ";
+            Telefono.textContent = "Teléfono:";
+            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
             break;
 
         case 'usa':
@@ -54,6 +64,12 @@ function establecerIdioma(idioma) {
             contenido.textContent = 'Content';
             imagenes.textContent = 'Images';
             videos.textContent = 'Videos';
+            Contacto.textContent = 'Contacts';
+            LineaFisca.innerHTML = "Free line of the Attorney General's Office: 122";
+            LineaPoliciaNacional.innerHTML = "Line of the National Police: 123";
+            LineadeRes.innerHTML = "Mobile Wildlife Rescue Unit: (+57) 317 4276828 or line 195 ";
+            Telefono.textContent = "Phone:";
+            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Illegal Animal Trafficking';
             break;
 
         default:
@@ -63,6 +79,12 @@ function establecerIdioma(idioma) {
             contenido.textContent = 'Contenido';
             imagenes.textContent = 'Imagenes';
             videos.textContent = 'Videos';
+            Contacto.textContent = 'Contactos';
+            LineaFisca.innerHTML = "Línea gratuita de la Fiscalía: 122";
+            LineaPoliciaNacional.innerHTML = "Línea de la Policía Nacional: 123";
+            LineadeRes.innerHTML = "Unidad Movil de Rescate de Fauna Silvestre: (+57) 317 4276828 o a la linea 195 ";
+            Telefono.textContent = "Teléfono:";
+            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
             break;
     }
 }
