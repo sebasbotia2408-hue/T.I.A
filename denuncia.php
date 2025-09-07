@@ -9,7 +9,7 @@ $mensaje .= "Especie afectada: $especie\n";
 $mensaje .= "Descripción: $descripcion\n";
 $mensaje .= "¿Desea permanecer anónimo?: $anonimo\n";
 
-$destino = "proteccionanimalbogota@animalesbog.gov.co";
+$destino = "juanaguillon02@gmail.com";
 
 $asunto = "Nueva denuncia de tráfico ilegal de fauna";
 
@@ -22,4 +22,5 @@ if (mail($destino, $asunto, $mensaje, $headers)) {
 } else {
   echo "Hubo un error al enviar la denuncia.";
 }
+
 ?>
