@@ -83,6 +83,8 @@ li a:hover {
 }
 .formulario{
     max-width: 600px;
+    position: relative;
+    top: 80px;
     margin: 30px auto;
     padding: 20px;
     background-color: #680101;
@@ -112,8 +114,8 @@ input[type="text"], textarea, select {
 }
 .titulo{
  position: absolute;
-  top: 190px; 
-  left: 750px;
+  top: -94px; 
+  left: 120px;
   color: rgb(3, 3, 3); 
   padding: 0 5px;
   font-size: 50px;
@@ -198,3 +200,4 @@ img{
     height: 4px;
     background-color: darkgreen;
 }
+
