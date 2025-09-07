@@ -89,8 +89,8 @@ li a:hover {
     padding: 20px;
     background-color: #680101;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgb(75, 55, 14);
-    border-color: rgb(2, 46, 5);
+    box-shadow: 30px 0 30px rgb(75, 55, 14);
+    border-color: rgb(2, 39, 4);
     color: #f4f4f4;
 }
 body {
@@ -200,4 +200,49 @@ img{
     height: 4px;
     background-color: darkgreen;
 }
+main {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px 10px;
+    background-color: rgb(8, 56, 38);
+    box-shadow: 10px 20px 30px rgb(100, 6, 6);
+
+}
+body,p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: rgb(245, 245, 245);
+}
+footer {
+    background-color: brown;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+footer p {
+    color: white;
+}
+footer h2 {
+    color: white;
+}
+footer h4 {
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-foo h4, .content-foo p {
+    margin: 5px;
+    text-align: center;
+}
+
 
