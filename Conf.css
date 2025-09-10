@@ -130,6 +130,7 @@ footer {
     text-align: center;
     clear: both;
     padding: 10px;
+    margin-top: auto;
 }
 footer a{
     text-decoration: none;
@@ -221,4 +222,74 @@ img{
     width: 30%;
     height: 4px;
     background-color: darkgreen;
+}
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+.bloque-boton {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+}
+.bloque-boton button {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.contenedor-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-img img {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.boton{
+    background-color: darkgreen; border: 2px solid brown;
+    color: #ffffff;
+}
+.boton:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.boton1{
+    background-color: darkgreen; border: 2px solid brown;
+    color: #ffffff;
+}
+.boton1:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.boton2{
+    background-color: darkgreen; border: 2px solid brown;
+    color: #ffffff;
+}
+.boton2:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.boton3{
+    background-color: darkgreen; border: 2px solid brown;
+    color: #ffffff;
+}
+.boton3:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+.boton4{
+    background-color: darkgreen; border: 2px solid brown;
+    color: #ffffff;
+}
+.boton4:hover{
+    background-color: darkred;
+    cursor: pointer;
 }
