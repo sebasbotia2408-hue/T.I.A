@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="imagenes/The.jpg.png" type="image/x-icon">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" type="text/css" href="Conf.css">
+    <link rel="stylesheet" type="text/css" href="quiene.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +20,14 @@
         <ul id= "idiomas" class="idiomas">
         <li class="opcion">
             <a href="#">
-                <img src="banderas/Español.svg" alt="Icono Bandera">
-                <span>Español</span>
+                <img src="banderas/latino.svg" alt="Icono Bandera">
+                <span>latino</span>
             </a>
         </li>
         <li class="opcion">
             <a href="#">
-                <img src="banderas/Inglés.svg" alt="Icono Bandera">
-                <span>Inglés</span>
+                <img src="banderas/usa.svg" alt="Icono Bandera">
+                <span>usa</span>
             </a>
         </li>
         </ul>
@@ -53,56 +53,40 @@
 <main id="galeria" class="gallery">
   <div class="botones">
     <div class="bloque-boton">
-      <button class="boton" onclick="mostrarImagen(1)">Objetivo General <img src="banderas/boton flecha.svg" alt="Icono boton">
+      <button id="ObjetivoGeneral" class="boton" onclick="mostrarImagen(1)">Objetivo General <img src="banderas/boton flecha.svg" alt="Icono boton">
       <div class="contenedor-img"></button>
       <div class="contenedor-img">
         <img id="img1" src="imagenes/Gene.jpg" alt="Imagen 1" style="display: none; width: 600px; height: 350px;">
       </div>
     </div>
     <div class="bloque-boton">
-      <button class="boton1" onclick="mostrarImagen(2)">Objetivos Especificos <img src="banderas/boton flecha.svg" alt="Icono boton">
+      <button id="ObjetivosEspecificos" class="boton1" onclick="mostrarImagen(2)">Objetivos Especificos <img src="banderas/boton flecha.svg" alt="Icono boton">
       <div class="contenedor-img"></button>
       <div class="contenedor-img">
         <img id="img2" src="imagenes/Obje.jpg" alt="Imagen 2" style="display: none; width: 600px; height: 350px;">
       </div>
     </div>
     <div class="bloque-boton">
-      <button class="boton2" onclick="mostrarImagen(3)">Mision <img src="banderas/boton flecha.svg" alt="Icono boton">
+      <button id="Mision" class="boton2" onclick="mostrarImagen(3)">Mision <img src="banderas/boton flecha.svg" alt="Icono boton">
       <div class="contenedor-img"></button>
       <div class="contenedor-img">
         <img id="img3" src="imagenes/Mision.jpg" alt="Imagen 3" style="display: none; width: 600px; height: 350px;">
       </div>
     </div>
     <div class="bloque-boton">
-      <button class="boton3" onclick="mostrarImagen(4)">Vision <img src="banderas/boton flecha.svg" alt="Icono boton"></button>
+      <button id="Vision" class="boton3" onclick="mostrarImagen(4)">Vision <img src="banderas/boton flecha.svg" alt="Icono boton"></button>
       <div class="contenedor-img">
         <img id="img4" src="imagenes/Vision.jpg" alt="Imagen 4" style="display: none; width: 600px; height: 350px;">
       </div>
     </div>
     <div class="bloque-boton">
-      <button class="boton4" onclick="mostrarImagen(5)">Pregunta Problema <img src="banderas/boton flecha.svg" alt="Icono boton">
+      <button id="PreguntaProblema" class="boton4" onclick="mostrarImagen(5)">Pregunta Problema <img src="banderas/boton flecha.svg" alt="Icono boton">
       <div class="contenedor-img"></button>
       <div class="contenedor-img">
         <img id="img5" src="imagenes/Pregunta.jpg" alt="Imagen 5" style="display: none; width: 600px; height: 350px;">
       </div>
     </div>
   </div>
-  <script>
-    let imageVisible = null;
-    function mostrarImagen(num) {
-        const img = document.getElementById("img" + num);
-        if (img.style.display === "block") {
-            img.style.display = "none";
-            imageVisible = null;
-            return;
-        }
-      for (let i = 1; i <= 5; i++) {
-        document.getElementById("img" + i).style.display = "none";
-      }
-        img.style.display = "block";
-        imageVisible = num;
-    }
-  </script>
 </main>
 <br>
 <br>
@@ -129,3 +113,4 @@
 </footer>
 </body>
 </html>
+
