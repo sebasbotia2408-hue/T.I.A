@@ -88,20 +88,16 @@ main.gallery {
   gap: 20px;
   padding: 30px;
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 div.gallery {
   width: 603px;
-  box-sizing: border-box;
-}
-
-div.gallery:hover {
-  border: 1px solid red;
 }
 
 div.gallery img {
-  width: 600px;
+  width: 100%;                
   height: auto;
+  display: block;
 }
 
 div.desc {
