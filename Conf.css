@@ -16,7 +16,7 @@ h1 {
 body,p {
     font-size: 20px;
     line-height: 1.5;
-    color: rgb(19, 18, 18);
+    color: rgb(252, 245, 245);
 }
 main {
     max-width: 800px;
@@ -110,9 +110,12 @@ img{
     
 }
 body {
-background-image: url("https://static.vecteezy.com/system/resources/previews/001/594/561/non_2x/nature-floral-green-background-free-vector.jpg");
+background-color: rgba(0,0,0,0.5);
+background-image: url("https://img2.wallspic.com/crops/9/0/6/7/97609/97609-bosque-la_selva_tropical-la_vegetacion-ecosistema-los_bosques_de_viejo_crecimiento-3840x2160.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+background-position: center ;
+background-blend-mode: darken;
 }
 video {
     width: 440px;
@@ -173,8 +176,9 @@ img{
     align-items: center;
     gap: 5px;
     padding: 10px;
-    border: 1px solid rgb(219,219, 219);
+    border: 5px solid rgb(219,219, 219);
     position: relative;
+    background-color: red;
 }
 .idioma:hover{
     background-color: rgb(228, 228, 228);
@@ -196,6 +200,7 @@ img{
     padding: 10px;
     font-size: 10px;
     color: rgb(85, 85, 85);
+    background-color: red;
 }
 .idiomas li a:hover{
     background-color: rgb(219, 219, 219);
@@ -289,3 +294,4 @@ img{
     background-color: darkred;
     cursor: pointer;
 }
+
