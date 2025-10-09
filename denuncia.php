@@ -1,4 +1,13 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Cargar las clases de PHPMailer
+require 'src/PHPMailer.php';
+require 'src/SMTP.php';
+require 'src/Exception.php';
+
+// Verificar que la solicitud sea POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo "Método no permitido.";
@@ -9,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $ubicacion = $_POST['ubicacion'];
 $especie = $_POST['especie'];
 $descripcion = $_POST['descripcion'];
-$anonimo = $_POST['anonimo'];
+$anonimo = isset($_POST['anonimo']) ? $_POST['anonimo'] : 'No';
 
 // Construir el mensaje
 $mensaje = "Ubicación del hecho: $ubicacion\n";
@@ -17,22 +26,34 @@ $mensaje .= "Especie afectada: $especie\n";
 $mensaje .= "Descripción del caso:\n$descripcion\n";
 $mensaje .= "¿Desea permanecer anónimo?: $anonimo\n";
 
-// Asunto del correo
-$asunto = "Nueva denuncia de tráfico ilegal de animales";
+// Configurar PHPMailer
+$mail = new PHPMailer(true);
 
-// Cabeceras del correo
-$headers = "From: no-reply@denuncias.com\r\n";
-$headers .= "Reply-To: no-reply@denuncias.com\r\n";
-$headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+try {
+    // Configuración del servidor SMTP
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'tu_correo@gmail.com'; // Cambia esto
+    $mail->Password = 'tu_clave_app';        // Usa una clave de aplicación
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
-// Lista de correos como array
-$correos = explode(", ", "juanaguillon02@gmail.com, sabecerca@especie.com, denuncias@autoridadambiental.gov.co");
+    // Remitente y destinatarios
+    $mail->setFrom('tu_correo@gmail.com', 'Formulario de Denuncia');
+    $mail->addAddress('juanaguillon02@gmail.com');
+    $mail->addAddress('sabecerca@especie.com');
+    $mail->addAddress('denuncias@autoridadambiental.gov.co');
 
-// Enviar a cada destinatario
-foreach ($correos as $correo) {
-    mail(trim($correo), $asunto, $mensaje, $headers);
+    // Contenido del correo
+    $mail->Subject = 'Nueva denuncia de tráfico ilegal de animales';
+    $mail->Body = $mensaje;
+
+    // Enviar
+    $mail->send();
+    echo "<h2>Denuncia enviada correctamente. ¡Gracias por tu compromiso!</h2>";
+} catch (Exception $e) {
+    echo "<h2>Error al enviar la denuncia: {$mail->ErrorInfo}</h2>";
 }
-
-// Confirmación al usuario
-echo "<h2>Denuncia enviada correctamente. ¡Gracias por tu compromiso!</h2>";
 ?>
+
