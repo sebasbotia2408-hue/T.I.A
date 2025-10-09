@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 200px auto;
+    margin-left: 600px;
+    max-width: 500px;
+    color: #c21616;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: #c21616 2px solid;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(44, 1, 1);
+    box-shadow: 30px 50px 30px rgb(4, 65, 9);
+}
+body{
+    background-color: rgb(15, 44, 4);
+}
