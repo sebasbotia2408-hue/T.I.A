@@ -34,6 +34,7 @@ function establecerIdioma(idioma) {
     const Videos = document.getElementById('Videos');
     const Denuncia = document.getElementById('Denuncia');
     const Perfiles = document.getElementById('Perfiles');
+    const Telefono = document.getElementById('Telefono');
     switch (idioma) {
         case 'latino':
             objetivoGeneral.innerHTML = 'OBJETIVO GENERAL <img src="banderas/boton flecha.svg" alt="Icono boton">';
@@ -50,6 +51,7 @@ function establecerIdioma(idioma) {
             Videos.textContent = 'Videos';
             Denuncia.textContent = 'Denuncia';
             Perfiles.textContent = 'Perfiles';
+            Telefono.textContent = 'Teléfono';
 
             break;
 
@@ -67,7 +69,8 @@ function establecerIdioma(idioma) {
             Imagenes.textContent = 'Images';
             Videos.textContent = 'Videos';
             Denuncia.textContent = 'Report';
-            Perfiles.textContent = 'Profiles';  
+            Perfiles.textContent = 'Profiles';
+            Telefono.textContent = 'Phone';
 
             break;
 
@@ -114,4 +117,5 @@ function mostrarImagen(num) {
     imgActual.style.display = "block";
     imageVisible = num; 
 }
+
 
