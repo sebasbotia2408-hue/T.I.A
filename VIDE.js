@@ -3,6 +3,7 @@ const ListaIdioma = document.getElementById('idiomas');
 const idiomas = document.getElementsByClassName('opcion');
 
 
+
 idiomaActual.addEventListener('click',()=>{
     ListaIdioma.classList.toggle('toggle');
 });
@@ -19,38 +20,40 @@ opcionesArray.forEach((opcion) => {
 function establecerIdioma(idioma) {
     idiomaActual.getElementsByTagName('img')[0].src = `banderas/${idioma}.svg`;
 
-    const inicio = document.getElementById('Inicio');
-    const quienes = document.getElementById('Quienes');
-    const contenido = document.getElementById('Contenido');
-    const imagenes = document.getElementById('Imagenes');
-    const denuncia = document.getElementById('Denuncia');
+    const Inicio = document.getElementById('Inicio');
+    const Contenido = document.getElementById('Contenido');
+    const Imagenes = document.getElementById('Imagenes');
+    const Denuncia = document.getElementById('Denuncia');
+    const Perfiles = document.getElementById('Perfiles');
+    const Telefono = document.getElementById('Telefono');
     switch (idioma) {
         case 'latino':
-            inicio.textContent = 'Inicio';
-            quienes.textContent = 'Quienes somos';
-            contenido.textContent = 'Contenido';
-            imagenes.textContent = 'Imagenes';
-            denuncia.textContent = 'Denuncia';
+            Inicio.textContent = 'Inicio';
+            Contenido.textContent = 'Contenido';
+            Imagenes.textContent = 'Imagenes';
+            Denuncia.textContent = 'Denuncia';
+            Perfiles.textContent = 'Perfiles';
+            Telefono.textContent = 'Teléfono';
 
             break;
 
         case 'usa':
-            inicio.textContent = 'Home';
-            quienes.textContent = 'About Us';
-            contenido.textContent = 'Content';
-            imagenes.textContent = 'Images';
-            denuncia.textContent = 'Report';
+            Inicio.textContent = 'Home';
+            Contenido.textContent = 'Content';
+            Imagenes.textContent = 'Images';
+            Denuncia.textContent = 'Report';
+            Perfiles.textContent = 'Profiles';
+            Telefono.textContent = 'Phone';
 
             break;
 
         default:
             titulo.textContent = 'TRÁFICO ILEGAL DE FAUNA SILVESTRE';
             parrafo.textContent = 'Este es un párrafo de información en español.';
-            inicio.textContent = 'Inicio';
-            quienes.textContent = 'Quienes somos';
-            contenido.textContent = 'Contenido';
-            imagenes.textContent = 'Imagenes';
-            denuncia.textContent = 'Denuncia';
+            Inicio.textContent = 'Inicio';
+            Contenido.textContent = 'Contenido';
+            Imagenes.textContent = 'Imagenes';
+            Denuncia.textContent = 'Denuncia';
 
             break;
     }
@@ -62,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             establecerIdioma('latino');
             break;
         case 'en-US':
-            establecerIdioma('latino');
+            establecerIdioma('usa');
             break;
         default:
             establecerIdioma('latino');
