@@ -27,6 +27,7 @@ function establecerIdioma(idioma) {
     const imagenes = document.getElementById('Imagenes');
     const videos = document.getElementById('Videos');
     const denuncia = document.getElementById('Denuncia');
+    const Perfiles = document.getElementById('Perfiles');
     switch (idioma) {
         case 'latino':
             titulo.textContent = 'TRAFICO ILEGAL DE FAUNA SILVESTRE';
@@ -46,7 +47,8 @@ function establecerIdioma(idioma) {
             videos.textContent = 'Videos';
             denuncia.textContent = 'Denuncia';
             Contacto.textContent = 'Contacto';
-            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
+            Perfiles.textContent = 'Perfiles';
+            titulo_final.textContent = '© Sebastian Aguillon - Shaiel Mendoza | Trafico Ilegal Animal';
             break;
 
         case 'usa':
@@ -68,7 +70,8 @@ function establecerIdioma(idioma) {
             videos.textContent = 'Videos';
             denuncia.textContent = 'Report';
             Contacto.textContent = 'Contact';
-            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Illegal Animal Trafficking';
+            Perfiles.textContent = 'Profiles';
+            titulo_final.textContent = '© Sebastian Aguillon - Shaiel Mendoza | Illegal Animal Trafficking';
 
             break;
 
