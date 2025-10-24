@@ -1,104 +1,104 @@
-const idiomaActual = document.getElementById('idioma');
-const ListaIdioma = document.getElementById('idiomas');
-const idiomas = document.getElementsByClassName('opcion');
-
-idiomaActual.addEventListener('click',()=>{
-    ListaIdioma.classList.toggle('toggle');
-});
-
-const opcionesArray = Array.from(idiomas);
-
-opcionesArray.forEach((opcion) => {
-    opcion.addEventListener('click', () => {
-        const idioma = opcion.getElementsByTagName ('span') [0].textContent.toLowerCase();
-        establecerIdioma(idioma);
-    });
-})
-
-function establecerIdioma(idioma) {
-    idiomaActual.getElementsByTagName('img')[0].src = `banderas/${idioma}.svg`;
-
-    const objetivoGeneral = document.getElementById('DenunciaT.I.A');
-    const objetivosEspecificos = document.getElementById('Ubicaciondelhecho');
-    const Mision = document.getElementById('Especieafectada(siseconoce)');
-    const Vision = document.getElementById('Descripciondelcaso');
-    const PreguntaProblema = document.getElementById('¿Deseaspermaneceranónimo?');
-    const inicio = document.getElementById('Inicio');
-    const quienes = document.getElementById('Quienes');
-    const contenido = document.getElementById('Contenido');
-    const imagenes = document.getElementById('Imagenes');
-    const videos = document.getElementById('Videos');
-    const LineaFisca = document.getElementById('LineaFisca');
-    const LineaPoliciaNacional = document.getElementById('LineaPoliciaNacional');
-    const LineadeRes = document.getElementById('LineadeRes');
-    const Telefono = document.getElementById('Telefono');
-
-    switch (idioma) {
-        case 'latino':
-            objetivoGeneral.textContent = 'Denuncia T.I.A';
-            objetivosEspecificos.textContent = 'Ubicación del hecho';
-            Mision.textContent = 'Especie afectada (si se conoce)';
-            Vision.textContent = 'Descripción del caso';
-            PreguntaProblema.textContent = '¿Deseas permanecer anónimo?';
-            inicio.textContent = 'Inicio';
-            quienes.textContent = 'Quienes somos';
-            contenido.textContent = 'Contenido';
-            imagenes.textContent = 'Imagenes';
-            videos.textContent = 'Videos';
-            Contacto.textContent = 'Contacto';
-            LineaFisca.innerHTML = "Línea gratuita de la Fiscalía: 122";
-            LineaPoliciaNacional.innerHTML = "Línea de la Policía Nacional: 123";
-            LineadeRes.innerHTML = "Unidad Movil de Rescate de Fauna Silvestre: (+57) 317 4276828 o a la linea 195 ";
-            Telefono.textContent = "Teléfono:";
-            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
-            break;
-
-        case 'usa':
-            objetivoGeneral.textContent = 'Report T.I.A';
-            objetivosEspecificos.textContent = 'Location of the event:';
-            Mision.textContent = 'Affected species (if known):';
-            Vision.textContent = 'Description of the case:';
-            PreguntaProblema.textContent = 'Do you want to remain anonymous?';
-            inicio.textContent = 'Home';
-            quienes.textContent = 'About us';
-            contenido.textContent = 'Content';
-            imagenes.textContent = 'Images';
-            videos.textContent = 'Videos';
-            Contacto.textContent = 'Contacts';
-            LineaFisca.innerHTML = "Free line of the Attorney General's Office: 122";
-            LineaPoliciaNacional.innerHTML = "Line of the National Police: 123";
-            LineadeRes.innerHTML = "Mobile Wildlife Rescue Unit: (+57) 317 4276828 or line 195 ";
-            Telefono.textContent = "Phone:";
-            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Illegal Animal Trafficking';
-            break;
-
-        default:
-            objetivoGeneral.textContent = 'Denuncia T.I.A';
-            inicio.textContent = 'Inicio';
-            quienes.textContent = 'Quienes somos';
-            contenido.textContent = 'Contenido';
-            imagenes.textContent = 'Imagenes';
-            videos.textContent = 'Videos';
-            Contacto.textContent = 'Contactos';
-            LineaFisca.innerHTML = "Línea gratuita de la Fiscalía: 122";
-            LineaPoliciaNacional.innerHTML = "Línea de la Policía Nacional: 123";
-            LineadeRes.innerHTML = "Unidad Movil de Rescate de Fauna Silvestre: (+57) 317 4276828 o a la linea 195 ";
-            Telefono.textContent = "Teléfono:";
-            titulo_final.textContent = '© Sebastian Aguillon, Shaiel Mendoza | Trafico Ilegal Animal';
-            break;
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    switch (navigator.language) {
-        case 'es-ES':
-            establecerIdioma('latino');
-            break;
-        case 'en-US':
-            establecerIdioma('usa');
-            break;
-        default:
-            establecerIdioma('latino');
-            break;
-    }
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncia</title>
+    <link rel="icon" href="imagenes/Logo.png" type="image/png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+    <div class="translate">
+        <a href="#" id="idioma" class="idioma">
+            <img src="" alt="Icono idioma">
+            <img src="banderas/boton flecha.svg" alt="Icono boton">
+        </a>
+        <ul id= "idiomas" class="idiomas">
+        <li class="opcion">
+            <a href="#">
+                <img src="banderas/latino.svg" alt="Icono Bandera">
+                <span>latino</span>
+            </a>
+        </li>
+        <li class="opcion">
+            <a href="#">
+                <img src="banderas/usa.svg" alt="Icono Bandera">
+                <span>usa</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <div class="Rectangulo-menu">
+                <ul id="menu" class="menu">
+                    <li><img src="imagenes/Logo.jpg" class="logo-img"/></li>
+                    <li><a href="index.html"><span class=""><i class="icon icon-home"></i></span><span id="Inicio">Inicio</span></a></li>
+                    <li><a href="Quienessomos.html"> <span id="Quienes">Quienes somos</span></a></li>
+                    <li>
+                        <a> <span class=""><i class="icon icon-image"></i></span> <span id="Contenido">Contenido</span> </a>
+                        <ul id="submenu" class="submenu">
+                            <li><a href="imagenes.html"> <span class=""><i class="icon icon-images"></i></span> <span id="Imagenes">Imagenes</span> </a></li>
+                            <li><a href="Videos.html"> <span class=""><i class="icon icon-play"></i></span> <span id="Videos"> Videos </span> </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="perfiles.html  "><span id="Perfiles">Perfiles</span></a></li>
+                </nav>
+            </div>
+    </header>
+<br>
+<div class="formulario">
+   <h2 class="titulo" id="DenunciaT.I.A"></h2> 
+<form action="https://formsubmit.co/juanaguillon2006@gmail.com" method="POST">
+  <label for="ubicacion" id="Ubicaciondelhecho"></label>
+  <input type="text" id="ubicacion" name="ubicacion" required>
+<br>
+  <label for="especie" id="Especieafectada(siseconoce)"></label>
+  <input type="text" id="especie" name="especie">
+<br>
+  <label for="descripcion" id="Descripciondelcaso"></label>
+  <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+<br>
+  <label for="anonimo" id="¿Deseaspermaneceranónimo?"></label>
+  <select id="anonimo" name="anonimo">
+    <option value="sí">Sí</option>
+    <option value="no">No</option>
+  </select>
+<br>
+  <input type="hidden" name="_subject" value="Nueva denuncia de tráfico ilegal de animales">
+  <input type="hidden" name="_next" value="https://sebasbotia2408-hue.github.io/Denuncia.html">
+  <input type="hidden" name="_cc" value="shaicadena03@gmail.com,juanaguillon02@gmail.com,sabecerca@especie.com,denuncias@autoridadambiental.gov.co">
+  <input type="submit" id="enviar" value="Enviar denuncia">
+</form>
+</div>
+<br>
+<main>
+  <h3 id="Contacto"></h3>
+  <p id="LineaFisca"></p>
+  <p id="LineaPoliciaNacional"></p>
+  <p id="LineadeRes"></p>
+</main>
+<footer>
+    <div class="contenedor-footer"></div>
+    <div class="content-foo">
+      <h4 id="Telefono"></h4>
+      <p>(+57) 310 3052492</p>
+      <p>(+57) 302 2591995</p>
+  </div>
+  <div class="contenedor-footer"></div>
+    <div class="content-foo">
+      <p> E-mail
+        <br>
+      <a href="mailto:sebasbotia2408@gmail.com ">sebasbotia2408@gmail.com</a>
+      <br>
+      <a href="mailto:shaicadena03@gmail.com ">shaicadena03@gmail.com</a>
+      </p>
+  </div>
+  <div class="contenedor-footer"></div>
+  </div>
+  <h2 class="titulo-final" id="titulo_final">&copy; Sebastian Aguillon, Shaiel Mendoza|Trafico Ilegal Animal </h2>
+<script src="denuncia.js"></script>
+</body>
+</html>
