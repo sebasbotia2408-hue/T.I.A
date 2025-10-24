@@ -4,7 +4,7 @@ const idiomas = document.getElementsByClassName('opcion');
 
 const titulo = document.getElementById('titulo-info');
 const parrafo= document.getElementById('parrafo-info');
-const Contacto = document.getElementById('Contacto');
+const Telefono = document.getElementById('Telefono');
 const titulo_final = document.getElementById('titulo_final');
 
 idiomaActual.addEventListener('click',()=>{
@@ -46,7 +46,7 @@ function establecerIdioma(idioma) {
             imagenes.textContent = 'Imagenes';
             videos.textContent = 'Videos';
             denuncia.textContent = 'Denuncia';
-            Contacto.textContent = 'Contacto';
+            Telefono.textContent = 'Teléfono';
             Perfiles.textContent = 'Perfiles';
             titulo_final.textContent = '© Sebastian Aguillon - Shaiel Mendoza | Trafico Ilegal Animal';
             break;
@@ -69,7 +69,7 @@ function establecerIdioma(idioma) {
             imagenes.textContent = 'Images';
             videos.textContent = 'Videos';
             denuncia.textContent = 'Report';
-            Contacto.textContent = 'Contact';
+            Telefono.textContent = 'Phone';
             Perfiles.textContent = 'Profiles';
             titulo_final.textContent = '© Sebastian Aguillon - Shaiel Mendoza | Illegal Animal Trafficking';
 
@@ -83,7 +83,7 @@ function establecerIdioma(idioma) {
                 imagenes.textContent = 'Imagenes';
                 videos.textContent = 'Videos';
                 denuncia.textContent = 'Denuncia';
-                Contacto.textContent = 'Contacto';
+                Telefono.textContent = 'Teléfono';
 
             break;
     }
@@ -102,3 +102,5 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
     }
 });
+
+
