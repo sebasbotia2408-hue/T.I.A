@@ -1,0 +1,269 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body, h1{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body,p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(252, 245, 245);
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+.menu {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    display: flex; 
+    background: red;
+}
+header{
+    width: 100%;
+}
+nav{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+.logo-img{
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: red;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+li a:hover {
+  background-color: rgb(22, 77, 33);
+}
+main.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  max-width: 2000px;
+  margin: 0 auto 20px auto;
+}
+div.gallery {
+  width: 603px;
+}
+
+div.gallery img {
+  width: 100%;                
+  height: auto;
+  display: block;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+img{
+    width: 650px;
+    height: 600px;
+    
+}
+body {
+background-color: rgba(0,0,0,0.5);
+background-image: url("https://img2.wallspic.com/crops/9/0/6/7/97609/97609-bosque-la_selva_tropical-la_vegetacion-ecosistema-los_bosques_de_viejo_crecimiento-3840x2160.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center ;
+background-blend-mode: darken;
+}
+
+.tarjeta img{
+    height: 450px;
+    width: 410px;
+    display: block;
+    margin-right: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px darkred;
+}
+.tarjeta article {
+    background-color: brown;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.tarjeta:hover article {
+    height: auto;
+    width: 390px;
+}
+.tarjetaa img{
+    height: 450px;
+    width: 410px;
+    display: block;
+    margin-left: 200%;
+    box-shadow: 20px 20px 60px darkred;
+    border-radius: 10px;
+}
+.tarjetaa article {
+    background-color: brown;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    padding: 0 10px;
+    margin-left: 200%;
+    border-radius: 10px;
+}
+.tarjetaa:hover article {
+    height: auto;
+    width: 390px;
+}
+video {
+    width: 440px;
+    height: 280px;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+footer {
+    background-color: brown;
+    text-align: center;
+    clear: both;
+    padding: 10px;
+    margin-top: auto;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+footer p {
+    color: white;
+}
+footer h2 {
+    color: white;
+}
+footer h4 {
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-foo h4, .content-foo p {
+    margin: 5px;
+    text-align: center;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 15px;
+    height: 15px;
+}
+.translate{
+    
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin: auto;
+}
+.idioma{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: 5px solid rgb(219,219, 219);
+    position: relative;
+    background-color: red;
+}
+.idioma:hover{
+    background-color: rgb(228, 228, 228);
+
+}
+.idiomas{
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.idiomas li{
+    width: 100%;
+
+}
+.idiomas li a{
+    display: block;
+    padding: 10px;
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+    background-color: red;
+}
+.idiomas li a:hover{
+    background-color: rgb(219, 219, 219);
+}
+.idiomas li img{
+    border-radius: 50%;
+}
+
+.toggle{
+    visibility: visible;
+}
+
+.info{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+.info div{
+    width: 30%;
+    height: 4px;
+    background-color: darkgreen;
+}
+
