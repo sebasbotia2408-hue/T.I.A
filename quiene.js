@@ -24,12 +24,16 @@ function establecerIdioma(idioma) {
     const objetivosEspecificos = document.getElementById('ObjetivosEspecificos');
     const Mision = document.getElementById('Mision');
     const Vision = document.getElementById('Vision');
-    const PreguntaProblema = document.getElementById('PreguntaProblema')
+    const PreguntaProblema = document.getElementById('PreguntaProblema');
+    const MarcoTeorico = document.getElementById('MarcoTeorico');
+    const Dofa = document.getElementById('Dofa');
+    const TeoriaColor = document.getElementById('TeoriaColor');
     const Inicio = document.getElementById('Inicio');
     const Contenido = document.getElementById('Contenido');
     const Imagenes = document.getElementById('Imagenes');
     const Videos = document.getElementById('Videos');
     const Denuncia = document.getElementById('Denuncia');
+    const Perfiles = document.getElementById('Perfiles');
     switch (idioma) {
         case 'latino':
             objetivoGeneral.innerHTML = 'OBJETIVO GENERAL <img src="banderas/boton flecha.svg" alt="Icono boton">';
@@ -37,11 +41,15 @@ function establecerIdioma(idioma) {
             Mision.innerHTML = 'MISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Vision.innerHTML = 'VISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             PreguntaProblema.innerHTML = 'PREGUNTA PROBLEMA <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            MarcoTeorico.innerHTML='MARCO TEORICO <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            Dofa.innerHTML='DOFA <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            TeoriaColor.innerHTML='TEORIA DEL COLOR <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Inicio.textContent = 'Inicio';
             Contenido.textContent = 'Contenido';
             Imagenes.textContent = 'Imagenes';
             Videos.textContent = 'Videos';
             Denuncia.textContent = 'Denuncia';
+            Perfiles.textContent = 'Perfiles';
 
             break;
 
@@ -51,11 +59,15 @@ function establecerIdioma(idioma) {
             Mision.innerHTML = 'MISSION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Vision.innerHTML = 'VISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             PreguntaProblema.innerHTML = 'QUESTION PROBLEM <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            MarcoTeorico.innerHTML='THEORETICAL FRAMEWORK <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            Dofa.innerHTML='DOFA <img src="banderas/boton flecha.svg" alt="Icono boton">';
+            TeoriaColor.innerHTML='COLOR THEORY <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Inicio.textContent = 'Home';
             Contenido.textContent = 'Content';
             Imagenes.textContent = 'Images';
             Videos.textContent = 'Videos';
             Denuncia.textContent = 'Report';
+            Perfiles.textContent = 'Profiles';  
 
             break;
 
@@ -102,3 +114,4 @@ function mostrarImagen(num) {
     imgActual.style.display = "block";
     imageVisible = num; 
 }
+
