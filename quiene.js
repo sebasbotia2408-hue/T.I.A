@@ -19,6 +19,7 @@ opcionesArray.forEach((opcion) => {
 
 function establecerIdioma(idioma) {
     idiomaActual.getElementsByTagName('img')[0].src = `banderas/${idioma}.svg`;
+    idiomaSeleccionado = idioma;
 
     const objetivoGeneral = document.getElementById('ObjetivoGeneral');
     const objetivosEspecificos = document.getElementById('ObjetivosEspecificos');
@@ -101,21 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
-let imageVisible = null; 
+let idiomaSeleccionado = 'latino'; 
 
 function mostrarImagen(num) {
-    const imgActual = document.getElementById("img" + num);
+  const todasLasImagenes = document.querySelectorAll('.contenedor-img img');
+  todasLasImagenes.forEach(img => img.style.display = 'none');
 
-    if (imageVisible === num) {
-        imgActual.style.display = "none";
-        imageVisible = null;
-        return;
-    }
-    if (imageVisible !== null) {
-        document.getElementById("img" + imageVisible).style.display = "none";
-    }
-    imgActual.style.display = "block";
-    imageVisible = num; 
+  const idImagen = idiomaSeleccionado === 'usa' ? `img${num}_en` : `img${num}`;
+  const imgActual = document.getElementById(idImagen);
+
+  if (!imgActual) return;
+
+  imgActual.style.display = "block";
+  imageVisible = num;
 }
 
 
