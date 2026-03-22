@@ -114,14 +114,13 @@ img{
     
 }
 body {
-    animation: cambioColor 20s infinite alternate;
-  }
-  
-  @keyframes cambioColor {
-    25%   { background-color: #033806; }
-    50%  { background-color: #ff0404; }
-    75%  { background-color: #993d00; }
-  }
+background-color: rgba(0,0,0,0.5);
+background-image: url("https://img2.wallspic.com/crops/9/0/6/7/97609/97609-bosque-la_selva_tropical-la_vegetacion-ecosistema-los_bosques_de_viejo_crecimiento-3840x2160.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center ;
+background-blend-mode: darken;
+}
 video {
     width: 440px;
     height: 280px;
