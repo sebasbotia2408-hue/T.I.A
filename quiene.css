@@ -253,7 +253,7 @@ img{
         width: 50%;
         display: flex;
         justify-content: center;
-        margin-top: -490px;
+        margin-top: -590px;
         flex-wrap: wrap;
         z-index: 1;
         position: relative;
@@ -263,7 +263,7 @@ img{
   border-radius: 10px;
 }
 .boton{
-    background-color: darkgreen; border: 2px solid brown;
+    background-color: darkgreen; border: 2px solid black;
     color: #ffffff;
 }
 .boton:hover{
@@ -271,7 +271,7 @@ img{
     cursor: pointer;
 }
 .boton1{
-    background-color: darkgreen; border: 2px solid brown;
+    background-color: darkgreen; border: 2px solid black;
     color: #ffffff;
 }
 .boton1:hover{
@@ -279,7 +279,7 @@ img{
     cursor: pointer;
 }
 .boton2{
-    background-color: darkgreen; border: 2px solid brown;
+    background-color: darkgreen; border: 2px solid black;
     color: #ffffff;
 }
 .boton2:hover{
@@ -287,7 +287,7 @@ img{
     cursor: pointer;
 }
 .boton3{
-    background-color: darkgreen; border: 2px solid brown;
+    background-color: darkgreen; border: 2px solid black;
     color: #ffffff;
 }
 .boton3:hover{
@@ -295,7 +295,7 @@ img{
     cursor: pointer;
 }
 .boton4{
-    background-color: darkgreen; border: 2px solid brown;
+    background-color: darkgreen; border: 2px solid black;
     color: #ffffff;
 }
 .boton4:hover{
