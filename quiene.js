@@ -42,10 +42,6 @@ function establecerIdioma(idioma) {
             objetivosEspecificos.innerHTML = 'OBJETIVOS ESPECIFICOS <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Mision.innerHTML = 'MISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Vision.innerHTML = 'VISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            PreguntaProblema.innerHTML = 'PREGUNTA PROBLEMA <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            MarcoTeorico.innerHTML='MARCO TEORICO <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            Dofa.innerHTML='DOFA <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            TeoriaColor.innerHTML='TEORIA DEL COLOR <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Inicio.textContent = 'Inicio';
             Contenido.textContent = 'Contenido';
             Imagenes.textContent = 'Imagenes';
@@ -61,10 +57,6 @@ function establecerIdioma(idioma) {
             objetivosEspecificos.innerHTML = 'SPECIFIC OBJECTIVES <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Mision.innerHTML = 'MISSION <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Vision.innerHTML = 'VISION <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            PreguntaProblema.innerHTML = 'QUESTION PROBLEM <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            MarcoTeorico.innerHTML='THEORETICAL FRAMEWORK <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            Dofa.innerHTML='DOFA <img src="banderas/boton flecha.svg" alt="Icono boton">';
-            TeoriaColor.innerHTML='COLOR THEORY <img src="banderas/boton flecha.svg" alt="Icono boton">';
             Inicio.textContent = 'Home';
             Contenido.textContent = 'Content';
             Imagenes.textContent = 'Images';
